@@ -36,6 +36,7 @@ const resolveFrom = (fromDirectory, moduleId, silent) => {
 		try {
 			return resolveFileName();
 		} catch (error) {
+			console.log(`resolve-from: failed: fromDirectory = ${fromDirectory}, moduleId = ${moduleId}`);
 			return;
 		}
 	}
